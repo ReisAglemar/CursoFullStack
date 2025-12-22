@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+<header>
+    <h1>Usando tabelas</h1>
+</header>
+
+<main>
+    <!--
+        borde="1" na table não é recomendado, deve ser feito via css
+    -->
+    <table>
+        <thead>
+        <tr>
+            <th>Produto</th>
+            <th>QTD</th>
+            <th>Valor</th>
+            <th>Id</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Teclado</td>
+            <td>1</td>
+            <td>R$ 100,00</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>Microondas</td>
+            <td>2</td>
+            <td>R$ 200,00</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <!--
+                colspan atributo para ocupar mais colunas, ampliador da coluna
+                rowspan atributo para ocupar mais linhas, ampliador da linha
+            -->
+            <td rowspan="2">Desconto</td>
+            <td colspan="3">Fidelidade R$20,00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Pix R$ 10,00</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
