@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos</title>
+</head>
+<body>
+<header>
+    <h1>Trabalhando com vídeos</h1>
+</header>
+
+<main>
+    <!--
+           Atributos para a tag video
+           autoplay, controls, height, loop,
+           muted, poster, preload, src, widht
+       -->
+    <video width="720" controls muted loop poster="../../Images/logo.png">
+        <source src="abelhas.mp4" type="video/mp4"> <!--tentativa 1-->
+        <source src="abelhas.ogg" type="video/ogg"> <!--tentativa 2-->
+        Seu navegador não suporta a reprodução de videos <!--caso não consiga carregar-->
+    </video>
+
+    <iframe width="720"
+            height="405"
+            src="https://www.youtube-nocookie.com/embed/Q8PNlCt2PSM?si=BgQuDegTAE3J3MbA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+    </iframe>
+</main>
+</body>
+</html>
