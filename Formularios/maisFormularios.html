@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mais Formularios</title>
+</head>
+<body>
+<header>
+    <h1>Mais sobre formulários</h1>
+    <a href="#fieldset">Formulário Com FielSet</a> |
+    <a href="#comun">Formulário Sem Fieldset</a>
+</header>
+
+<main>
+    <h2 id="comun">Formulário Padrão</h2>
+    <form action="processa.html" method="get">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome"><br>
+
+        <br><br>
+        <b>Escolha sua bebida</b><br>
+
+        <input type="radio" name="bebida" id="cerveja" value="cerveja">
+        <label for="cerveja">Cerveja</label><br>
+
+        <input type="radio" name="bebida" id="refrigerante" value="refrigerante">
+        <label for="refrigerante">Refrigerante</label><br>
+
+        <input type="radio" name="bebida" id="agua" value="agua">
+        <label for="agua">Água</label><br>
+
+        <input type="radio" name="bebida" id="semBebida" value="semBebida">
+        <label for="semBebida">Sem Bebida</label><br>
+
+        <!--
+            Importante notar que o name define o grupo dos radios, ou seja, todos os radios com e mesmo name
+            são do mesmo grupo, onde só é possível escolher um membro do grupo
+        -->
+        <br><b>Escolha a forma de pagamento</b><br>
+
+        <input type="checkbox" name="pagamento" id="debito" value="debito">
+        <label for="debito">Débito</label><br>
+
+        <input type="checkbox" name="pagamento" id="credito" value="credito">
+        <label for="credito">Crédito</label><br>
+
+        <input type="checkbox" name="pagamento" id="dinheiro" value="dinheiro">
+        <label for="dinheiro">Dinheiro</label><br>
+
+        <input type="checkbox" name="pagamento" id="pix" value="pix">
+        <label for="pix">Pix</label><br>
+
+        <br><b>Endereço de Entrega</b><br>
+
+        <label for="entrega">Selecione um endereço cadastrado</label><br>
+        <select name="entrega" id="entrega">
+            <option value="">Selecione</option>
+            <option value="comercial">Comercial</option>
+            <option value="residencial">Residencial</option>
+        </select><br>
+
+        <br><b>Envio do Documento</b><br>
+        <label for="documento">Buscar Doc.</label>
+        <input type="file" name="documento" id="documento"><br>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2 id="fieldset">Formulários com fieldset e legends</h2>
+    <form action="processa.html" method="get">
+        <fieldset>
+            <legend><b>Seu Pedido</b></legend>
+            <fieldset>
+                <legend><b>Dados Pessoais</b></legend>
+                <label for="nome1">Nome:</label>
+                <input type="text" name="nome" id="nome1" placeholder="Digite seu nome"><br>
+
+                <label for="sobrenome1">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome1" placeholder="Digite seu sobrenome"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Escolha Sua Bebida</b></legend>
+                <input type="radio" name="bebida" id="cerveja1" value="cerveja">
+                <label for="cerveja1">Cerveja</label><br>
+
+                <input type="radio" name="bebida" id="refrigerante1" value="refrigerante">
+                <label for="refrigerante1">Refrigerante</label><br>
+
+                <input type="radio" name="bebida" id="agua1" value="agua">
+                <label for="agua1">Água</label><br>
+
+                <input type="radio" name="bebida" id="semBebida1" value="semBebida">
+                <label for="semBebida1">Sem Bebida</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Escolha a Forma de Pagamento</b></legend>
+                <input type="checkbox" name="pagamento" id="debito1" value="debito">
+                <label for="debito1">Débito</label><br>
+
+                <input type="checkbox" name="pagamento" id="credito1" value="credito">
+                <label for="credito1">Crédito</label><br>
+
+                <input type="checkbox" name="pagamento" id="dinheiro1" value="dinheiro">
+                <label for="dinheiro1">Dinheiro</label><br>
+
+                <input type="checkbox" name="pagamento" id="pix1" value="pix">
+                <label for="pix1">Pix</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Escolha o Endereço de Entrega</b></legend>
+                <label for="entrega1">Selecione um endereço cadastrado</label><br>
+                <select name="entrega" id="entrega1">
+                    <option value="">Selecione</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="residencial">Residencial</option>
+                </select><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Envio de Documento</b></legend>
+                <label for="documento1">Buscar Doc.</label>
+                <input type="file" name="documento" id="documento1"><br>
+            </fieldset>
+
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
