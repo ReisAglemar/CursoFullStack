@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Formulário</title>
+</head>
+<body>
+<header>
+    <h1>Exercício Formulário</h1>
+</header>
+
+<main>
+    <form action="processa.html" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br>
+
+            <input type="checkbox" id="receberEmail" name="receberEmail" value="true">
+            <label for="receberEmail">Quero receber e-mail</label><br><br>
+
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <input type="radio" name="tipoPessoa" id="pessoaFisica" value="pessoaFisica">
+            <label for="pessoaFisica">Pessoa fisica</label>
+            <input type="radio" name="tipoPessoa" id="pessoaJuridica" value="pessoaJuridica">
+            <label for="pessoaJuridica">Pessoa juridical</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</main>
+</body>
+</html>
