@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: gray;
+    padding: 20px;
+}
+
+#ulmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ulmenu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.bckgBlack {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+#texto1 {
+    line-height: 4;
+}
+
+.footer {
+    height: 62px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto2 {
+    line-height: 4;
+    color: white;
+}
