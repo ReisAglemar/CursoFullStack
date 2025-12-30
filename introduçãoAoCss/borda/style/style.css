@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1366px;
+    margin: auto;
+}
+
+h1{
+    /*
+    com bordas personalizas em cada canto
+    */
+    border-width: 16px 8px 8px 16px;
+    border-style: inset;
+    border-color: #6BD425;
+    margin: 32px 16px 0 16px;
+}
+
+h2{
+    border: 4px dashed #42113C;
+    margin: 16px;
+}
+
+h3{
+    border: 4px double #42113C;
+    margin: 16px;
+}
+
+p{
+    border: 4px dashed #6BD425;
+    margin: 16px;
+}
