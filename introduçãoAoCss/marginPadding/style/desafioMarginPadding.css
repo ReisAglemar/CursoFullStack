@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+
+.tituloH1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    /*Trecho gerado po IA;
+    objeto é ter um h1 para fins
+    de seo, mas que não esteja visível,
+    pois afeta o layout da página*/
+}
+
+.header {
+    background-color: #0075e2;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.itemMenuLogo {
+    list-style: none;
+    align-items: flex-end;
+}
+
+.itemMenu {
+    list-style: none;
+    align-items: flex-end;
+    border: 2px solid #ffffff;
+    background-color: #76c3fa;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.linkMenu {
+    color: #1282ff;
+}
+
+.comprePeloTefone {
+    background-color: white;
+}
+
+.mainBanner {
+    background-color: purple;
+}
+
+.mainDestaque{
+    max-width: 1366px;
+    margin: auto;
+}
+
+.mainDestaqueTitulo{
+    margin: 10px auto;
+}
+
+.mainDestaqueProduto{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer{
+    background-color: #0075e2;
+    padding: 4px;
+    margin-bottom: 120px;
+}
+
+.textoFooterMagazineLuiza{
+    font-weight: bold;
+}
+
+.textFooterDireitoReservados{
+    font-weight: bold;
+    color: white;
+}
