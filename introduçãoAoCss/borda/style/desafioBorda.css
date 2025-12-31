@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.titulo{
+    text-align: center;
+    border-bottom: 4px dotted black;
+    margin: 30px auto;
+    background-color: #ff9d22;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.paragrafo{
+    line-height: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #a5bcd9;
+    font-size: 20px;
+    border-left: 12px solid #3f3b81;
+    border-right: 12px solid #3f3b81;
+}
