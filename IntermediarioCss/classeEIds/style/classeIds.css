@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body_container{
+    margin: 20px;
+}
+ .hero_content{
+     background-color: yellow;
+     margin-bottom: 20px;
+ }
+
+ .hero_title{
+     margin-bottom: 20px;
+ }
+
+ .hero_title:hover{
+     background-color: orange;
+     transition: 700ms;
+     cursor: pointer;
+ }
+
+ .courses_item{
+     margin-bottom: 20px;
+     background-color: lightgray;
+ }
+
+ .course_title{
+     margin-bottom: 20px;
+ }
+
+ .course_title:hover{
+     background-color: royalblue;
+     transition: 700ms;
+     cursor: pointer;
+ }
+
+ #course_flutter{
+     background-color: orange;
+ }
+ #course_flutter_title:hover{
+     background-color: yellow;
+     transition: 700ms;
+     cursor: pointer;
+ }
+
+ .footer_copy{
+     border: 1px solid gray;
+     padding: 2px;
+ }

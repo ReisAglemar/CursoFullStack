@@ -15,7 +15,7 @@ window.onload = function({ target: Document }) {
     css.setAttribute('rel', 'stylesheet');
     css.setAttribute('href', './css/style.css');
     icon.setAttribute('rel', 'icon');
-    icon.setAttribute('href', './img/favico.ico');
+    icon.setAttribute('href', './style/favico.ico');
     head.appendChild(css);
     head.appendChild(icon);
 
@@ -327,7 +327,7 @@ function additionalImageFunction(content) {
   }
 
   /**
-   * This promise will read the SVG file into the /img folder
+   * This promise will read the SVG file into the /style folder
    * and render it into the HTML element of type button.
    */
   if (content[0]?.nodeName) {
