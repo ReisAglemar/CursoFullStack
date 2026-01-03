@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.products_item{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.products{
+    color: red;
+}
