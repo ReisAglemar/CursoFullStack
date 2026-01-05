@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1, h2, p {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.pai {
+    border: 2px solid red;
+    width: 50%;
+    height: 300px;
+}
+
+.filho {
+    border: 2px solid blue;
+    width: 50%;
+    height: 200px;
+}
+
+.pai1 {
+    border: 2px solid red;
+    width: 50vw;
+    height: 300px;
+}
+
+.filho1 {
+    border: 2px solid blue;
+    width: 50vw;
+    height: 200px;
+}
+
+.img {
+    border: 3px solid purple;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50vw;
+    background-color: yellow;
+}
+
