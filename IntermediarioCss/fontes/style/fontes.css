@@ -15,10 +15,9 @@ body{
 
 .container div{
     margin: 15px auto;
-    text-align: center;
     color: royalblue;
     border: 2px solid #b10000;
-    font-size: 0.9em;
+    font-size: 1.4em;
     cursor: pointer;
 }
 
@@ -75,4 +74,12 @@ body{
     font-weight: 400;
     font-style: normal;
     color: red;
+}
+
+.paragrafo{
+    text-align: justify;
+    text-indent: 4em;
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
