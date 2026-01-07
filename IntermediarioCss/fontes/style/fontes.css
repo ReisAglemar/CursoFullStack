@@ -57,7 +57,7 @@ body{
     font-family: "Quantico", sans-serif;
     font-weight: 700;
     font-style: italic;
-    word-spacing: 0.6em;
+    word-spacing: 0.6em; /*Espaçamento entre as palavras*/
 }
 
 
@@ -67,6 +67,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "ROND" 0;
+    text-indent: 2em; /*Recuo de parágrafo*/
 }
 
 .windsong-regular {
