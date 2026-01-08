@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* <weight>: Use a value from 100 to 900*/
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 1700px;
+    /*
+    background-color: gray;
+    background-image: url(../img/pexels-joshsorenson-1253057.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    */
+
+    /*Todas as propriedades cor, imagem, repeat, attachment position*/
+    background: #0F2854 url("../img/fundo.jpg") no-repeat center center fixed;
+}
