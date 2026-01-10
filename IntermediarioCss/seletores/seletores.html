@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores</title>
+    <link rel="stylesheet" href="style/seletores.css">
+</head>
+<body>
+<header>
+    <h1>Seletores, filhos diretos</h1>
+    <div class="pai">
+        <h2>Pai</h2>
+        <p>Seleciona apenas o filho direto (.pai>h2)</p>
+        <p>Seletor de filho</p>
+        <div class="filho">
+            <h2>Filho</h2>
+        </div>
+    </div>
+
+    <div class="pai1">
+        <h2>Pai1</h2>
+        <p>Seleciona todos os filho (.pai1 h2)</p>
+        <p>Seletor de descendente</p>
+        <div class="filho1">
+            <h2>Filho1</h2>
+        </div>
+    </div>
+
+    <div class="pai1">
+        <h2>Pai1</h2>
+        <p>Seleciona apenas o primeiro irmão (.pai1 h2+p)</p>
+        <p>Seletor irmão adjacente</p>
+        <div class="filho1">
+            <h2>Filho1</h2>
+        </div>
+    </div>
+
+    <div class="pai2">
+        <h2>Pai2</h2>
+        <p>Seleciona todos os irmãos (.pai2 h2~p)</p>
+        <p>Seletor irmão</p>
+        <div class="filho2">
+            <h2>Filho2</h2>
+        </div>
+    </div>
+</header>
+</body>
+</html>
