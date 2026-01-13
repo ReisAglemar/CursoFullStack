@@ -1,37 +1,3 @@
-.hero-image img {
-    width: 100%;
-}
-
-.hero-nav {
-    background: #d2d2c0;
-}
-
-.hero-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.hero-nav ul li {
-    list-style: none;
-}
-
-.hero-nav ul li a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 800;
-    padding: .2rem .5rem;
-}
-
-.hero-nav ul li a:hover {
-    text-decoration: none;
-    color: #f0f0f0;
-    background: #717161;
-    border-radius: .3rem;
-    box-shadow: 0 .5rem .5rem #717161;
-}
-
 .sobre {
     background: #e5e4d4;
 }
@@ -52,11 +18,5 @@
 
 .sobre p:first-letter {
     font-weight: bold;
-}
-
-.rodape {
-    text-align: center;
-    padding: 1.5rem 0;
-    font-weight: 900;
 }
 
