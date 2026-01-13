@@ -1,0 +1,8 @@
+.mainSection p.contato {
+    font-weight: 900;
+    padding: .3rem 0;
+}
+
+.mainSection p.contato:last-child {
+    padding-bottom: 2rem;
+}

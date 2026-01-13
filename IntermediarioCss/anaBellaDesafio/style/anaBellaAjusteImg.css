@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5rem;
 }
 
-.imgBiografia{
+.img {
     width: 35vw;
 }
-
