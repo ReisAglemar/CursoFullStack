@@ -55,6 +55,28 @@ body {
     box-shadow: 0 .5rem .5rem #717161;
 }
 
+.mainSection {
+    background: #e5e4d4;
+}
+
+.mainSection h2 {
+    padding: .6rem 2rem;
+}
+
+.mainSection p {
+    padding: .6rem 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+.mainSection p:last-child {
+    padding-bottom: 1.2rem;
+}
+
+.mainSection p:first-letter {
+    font-weight: bold;
+}
+
 .rodape {
     text-align: center;
     padding: 1.5rem 0;

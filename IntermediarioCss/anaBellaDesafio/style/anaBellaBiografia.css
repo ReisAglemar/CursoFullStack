@@ -1,2 +1,10 @@
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.imgBiografia{
+    width: 35vw;
+}
 
