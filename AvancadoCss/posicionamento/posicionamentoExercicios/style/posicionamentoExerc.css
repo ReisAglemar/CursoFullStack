@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ===== GENÉRICOS ===== */
+.rounded {
+    border-radius: 2rem;
+}
+
+.shadow {
+    box-shadow: 8px 8px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card{
+    padding: 1.5rem;
+}
+
+.text{
+    margin-top: 1rem;
+    text-indent: 3rem;
+    text-align: justify;
+    padding-inline: 1rem;
+    line-height: 1.5rem;
+}
+/* ===== FIM ===== */
+
+.container {
+    width: 75vw;
+    margin: 1rem auto 2rem auto;
+    background-color: #6383e1;
+    position: relative;
+}
+
+.posicionamento {
+    background-color: chocolate;
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+
