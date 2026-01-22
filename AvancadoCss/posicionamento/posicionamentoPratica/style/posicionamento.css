@@ -29,6 +29,10 @@ body {
     margin: 0.8rem;
 }
 
+.nav{
+    display: flex;
+}
+
 .hero-nav {
     display: flex;
     align-items: center;
