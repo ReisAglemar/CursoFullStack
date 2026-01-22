@@ -32,6 +32,7 @@ body {
 .hero-nav {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .hero-nav li {
@@ -44,7 +45,6 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    margin: 0 1rem 0 1rem;
 }
 
 .hero-nav a:hover {
