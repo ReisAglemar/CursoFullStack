@@ -68,9 +68,9 @@ body {
     color: #0A0935;
 }
 
-.links.active {
-    background-color: #fff;
-    color: #000;
+.links:active {
+    background-color: #D7F205;
+    transition: 1ms ease-in-out;
 }
 
 li {
