@@ -1,4 +1,4 @@
-:root{
+:root {
     --box-shadowbox: 7px 7px 5px 0 rgba(0, 0, 0, 0.3);
     --transition: 300ms ease-in-out;
     --primary-color: #f0f0f0;
@@ -12,11 +12,14 @@
     padding: 0;
 }
 
+.border {
+    border: 1px solid var(--secondary-color);
+}
+
 body {
     background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .p0-5 {
     padding: 0.5rem;
@@ -25,15 +28,14 @@ body {
 .main-container {
     width: 100%;
     min-height: 100vh;
+    padding: 0.75rem;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
     flex: 0 1 auto;
-    border-bottom: 1px solid grey;
 }
 
 .header a {
@@ -41,15 +43,23 @@ body {
     display: block;
 }
 
+.header a:active {
+    opacity: 0.7;
+}
+
 .logo img {
-    width: 130px;
+    width: clamp(130px, 75vw, 260px);
+}
+
+.menu {
+    width: 100%;
 }
 
 .menu-ul {
     display: flex;
-    gap: 1rem;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     flex: 0 1 auto;
+    align-items: flex-start;
 }
 
 .menu-ul li {
@@ -59,21 +69,16 @@ body {
 .first-nav {
     color: black;
     font-weight: normal;
-    transition: var(--transition);
     border-radius: 6px;
 }
 
-.first-nav:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    box-shadow: var(--box-shadowbox);
-
-}
-
 .menu-buttons {
+    width: 100%;
     display: flex;
-    flex: 0 1 auto;
+    flex-flow: column nowrap;
     gap: 1rem;
+    flex: 0 1 auto;
+    align-items: flex-start;
 }
 
 .button-sellers,
@@ -84,22 +89,71 @@ body {
 
 .button-sellers {
     color: var(--secondary-color);
-    transition: var(--transition);
-}
-
-.button-sellers:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    box-shadow: var(--box-shadowbox);
 }
 
 .button-new-account {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    transition: var(--transition);
 }
 
-.button-new-account:hover {
-    background-color: #0c4ed5;
-    box-shadow: var(--box-shadowbox);
+/*TABLET 600 a 1023px*/
+
+@media (min-width: 600px) {
+    .menu-ul {
+        flex-flow: row wrap;
+        flex: 0 1 auto;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .menu-buttons {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+/*PC >1024px */
+@media (hover: hover) and (min-width: 1024px) {
+
+    .header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: auto;
+    }
+
+    .menu-ul {
+        flex-flow: row wrap;
+    }
+
+    .menu-buttons {
+        width: auto;
+        flex-flow: row wrap;
+    }
+
+    .first-nav:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        box-shadow: var(--box-shadowbox);
+    }
+
+    .button-sellers:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        box-shadow: var(--box-shadowbox);
+    }
+
+    .first-nav,
+    .button-sellers,
+    .button-new-account {
+        transition: var(--transition);
+    }
+
+    .button-new-account:hover {
+        background-color: #0c4ed5;
+        box-shadow: var(--box-shadowbox);
+    }
 }
