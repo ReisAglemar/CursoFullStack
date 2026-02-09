@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0f0f0;
+}
+
+.container{
+    padding: 15px;
+    width: 75vw;
+    margin: 0 auto;
+    border: #D7F205 1px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    background-color: #94A3B8;
+
+}
+
+.box{
+    border: 1px solid black;
+    display: flex;
+    height: 266px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 1rem;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+}
