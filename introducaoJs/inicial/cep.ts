@@ -1,19 +1,25 @@
-const cep: string = "8805461"
+let cep: string = "8805461"
 
-async function consultaCep(cep: string) {
-    try{
-        const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+async function getData(cep: string) {
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    try {
+        const response = await fetch(url);
 
-        if (!resposta.ok) {
-            const erroTexto = await resposta.text();
-            throw new Error(`Erro ${resposta.status}: ${erroTexto}`);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
         }
 
-        const dados = await resposta.json()
-        console.log(dados)
+        const result = await response.json();
+        console.log(result);
+
     } catch (error) {
-        console.error("Erro detalhado:", error);
+
+        if (error instanceof Error) {
+            console.error("Detalhe:", error.message);
+        } else {
+            console.error("Erro desconhecido:", error);
+        }
     }
 }
 
-consultaCep(cep);
+getData(cep);
