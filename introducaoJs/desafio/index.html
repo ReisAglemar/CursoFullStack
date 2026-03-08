@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Álcool ou Gasolina</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Álcool ou Gasolina</h1>
+    </header>
+
+    <main class="main">
+        <form action="#" method="POST">
+            <label for="gasolina">Gasolina</label>
+            <input type="text" id="gasolina" name="gasolina" placeholder="Valor do litro da gasolina">
+
+            <label for="media_gasolina">Consumo na gasolina</label>
+            <input type="text" id="media_gasolina" name="consumo_gasolina" placeholder="Consumo na gasolina">
+
+            <label for="alcool">Alcool</label>
+            <input type="text" id="alcool" name="alcool" placeholder="Valor do litro do alcool">
+
+            <label for="media_alcool">Consumo no álcool</label>
+            <input type="text" id="media_alcool" name="consumo_alcool" placeholder="Consumo no álcool">
+
+            <button type="button" onclick="executar()">Calcular</button>
+        </form>
+
+        <section class="resultado">
+            <h2>Resultado:</h2>
+            <p id="resultado">Resultado aqui</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desenvolvido por ReisDev</p>
+    </footer>
+</div>
+
+<script src="./script/script.js"></script>
+</body>
+</html>
