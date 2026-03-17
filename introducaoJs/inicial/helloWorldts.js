@@ -1,4 +1,5 @@
-function helloWorld(text) {
-    console.log(text);
+"use strict";
+function helloWorldts(word) {
+    console.log(word);
 }
-helloWorld("Hello World");
+helloWorldts("hello world");

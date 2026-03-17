@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    .header {
+        padding-top: 5rem;
+
+        h1 {
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .inputs {
+            display: flex;
+            gap: 0.75rem;
+            padding-bottom: 1rem;
+
+            #nome,
+            #btn-pesquisar,
+            #btn-carregar,
+            #btn-cadastrar{
+                font-size: 1.3rem;
+                padding: 0.5rem;
+            }
+
+            #nome,
+            #btn-pesquisar,
+            #btn-carregar,
+            #btn-cadastrar{
+                border: 1px solid #94A3B8;
+                border-radius: 0.25rem;
+            }
+
+            #nome {
+                width: 15%;
+
+                &&:focus {
+                    outline: 1px solid black;
+                }
+            }
+
+            #btn-pesquisar,
+            #btn-carregar,
+            #btn-cadastrar{
+                width: 7.5%;
+
+                &&:active {
+                    scale: 0.95;
+                }
+            }
+
+            #btn-pesquisar {
+                background-color: royalblue;
+                color: white;
+            }
+
+            #btn-carregar {
+                background-color: #E37434;
+            }
+
+            #btn-cadastrar{
+                background-color: #6BD425;
+            }
+        }
+
+        hr {
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    .main {
+        margin-bottom: 2rem;
+
+        #lista-Usuario {
+            display: flex;
+            gap: 0.5rem;
+            flex-flow: column nowrap;
+
+            div {
+                border: 1px solid #94A3B8;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8rem;
+
+    }
+}
+
