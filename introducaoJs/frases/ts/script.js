@@ -1,4 +1,5 @@
-var frases = ["Mesmo quando o caminho parece confuso e cheio de incertezas, lembre-se de que Deus continua " +
+"use strict";
+const frases = ["Mesmo quando o caminho parece confuso e cheio de incertezas, lembre-se de que Deus continua " +
         "trabalhando em silêncio, organizando aquilo que ainda não conseguimos compreender e preparando o momento certo" +
         "para que cada coisa encontre o seu lugar.",
     "Há momentos em que tudo parece parar, mas muitas vezes é justamente nesse silêncio que Deus está fortalecendo o " +
@@ -39,7 +40,7 @@ var frases = ["Mesmo quando o caminho parece confuso e cheio de incertezas, lemb
     "Quando colocamos Deus no centro das decisões, o coração encontra equilíbrio mesmo em meio às mudanças e " +
         "incertezas do mundo."];
 function novaFrase() {
-    var indice = Math.floor(Math.random() * 20);
-    var paragrafo = document.getElementById("frase");
+    const indice = Math.floor(Math.random() * 20);
+    const paragrafo = document.getElementById("frase");
     paragrafo.innerHTML = frases[indice];
 }
